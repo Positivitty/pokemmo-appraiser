@@ -1,0 +1,262 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.noBuild {
+  color: var(--text-muted);
+  text-align: center;
+  padding: 24px;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.field {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.field label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.toggles {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.toggle input {
+  accent-color: var(--accent-primary);
+  width: 16px;
+  height: 16px;
+}
+
+.generate {
+  background: var(--accent-primary);
+  color: white;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+}
+
+.generate:hover {
+  background: var(--accent-hover);
+}
+
+.targetSpread h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.spreadGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+
+.spreadItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 8px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+}
+
+.spreadLabel {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-muted);
+}
+
+.spreadValue {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.planResults {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 16px;
+}
+
+.summary {
+  display: flex;
+  gap: 16px;
+}
+
+.summaryItem {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 12px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+}
+
+.summaryLabel {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.summaryValue {
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.vitamins h4,
+.steps h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent-success);
+  margin-bottom: 8px;
+}
+
+.vitaminList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.vitaminItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+}
+
+.vitaminName {
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 80px;
+}
+
+.vitaminCount {
+  font-weight: 700;
+  color: var(--accent-warning);
+}
+
+.vitaminGain {
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.step {
+  padding: 12px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  margin-bottom: 8px;
+}
+
+.stepHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.stepStat {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-accent);
+}
+
+.stepProgress {
+  font-size: 13px;
+  color: var(--text-secondary);
+  font-variant-numeric: tabular-nums;
+}
+
+.stepTarget {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 13px;
+}
+
+.targetName {
+  color: var(--text-secondary);
+}
+
+.targetName strong {
+  color: var(--text-primary);
+}
+
+.targetLocation {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+.battleCounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.targetNotes {
+  margin-top: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.complete {
+  text-align: center;
+  color: var(--accent-success);
+  font-weight: 600;
+  padding: 16px;
+}
+
+@media (max-width: 600px) {
+  .spreadGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

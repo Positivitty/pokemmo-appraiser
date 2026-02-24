@@ -1,0 +1,44 @@
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.label {
+  width: 32px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-align: right;
+}
+
+.value {
+  width: 32px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.barContainer {
+  flex: 1;
+  height: 8px;
+  background: var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.4s ease;
+}
+
+.bar[data-stat="hp"] { background: var(--stat-hp); }
+.bar[data-stat="atk"] { background: var(--stat-atk); }
+.bar[data-stat="def"] { background: var(--stat-def); }
+.bar[data-stat="spa"] { background: var(--stat-spa); }
+.bar[data-stat="spd"] { background: var(--stat-spd); }
+.bar[data-stat="spe"] { background: var(--stat-spe); }

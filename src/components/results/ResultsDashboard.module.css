@@ -1,0 +1,191 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.headerInfo h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.finalScore {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scoreText {
+  display: flex;
+  flex-direction: column;
+}
+
+.scoreNumber {
+  font-size: 28px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+}
+
+.scoreLabel {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.scoreGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.buildMatch h4,
+.market h4,
+.recommendations h4 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.buildCard {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.buildHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.buildName {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.buildTier {
+  background: var(--accent-primary);
+  color: white;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.buildDesc {
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.buildDetails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.buildDetails strong {
+  color: var(--text-primary);
+}
+
+.moves {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.move {
+  background: var(--bg-elevated);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.market {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 16px;
+}
+
+.priceInfo {
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+
+.priceMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.priceLabel {
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.priceValue {
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--grade-s);
+  font-variant-numeric: tabular-nums;
+}
+
+.priceMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: var(--text-secondary);
+}
+
+.low { color: var(--grade-c); }
+.medium { color: var(--grade-b); }
+.high { color: var(--grade-a); }
+.very_high { color: var(--grade-s); }
+
+.recommendations {
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 16px;
+}
+
+.recommendations ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.recommendations li {
+  font-size: 14px;
+  color: var(--text-secondary);
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--accent-primary);
+}
+
+@media (max-width: 600px) {
+  .scoreGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
