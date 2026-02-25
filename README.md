@@ -31,18 +31,51 @@ That competitive score (70%) is combined with a market value estimate (30%) for 
 
 ## Quick Start
 
+### Prerequisites
+
+You need **Node.js** installed on your computer. If you don't have it:
+
+1. Go to https://nodejs.org/
+2. Download the **LTS** version (green button)
+3. Run the installer and follow the prompts
+4. Restart your terminal/command prompt after installing
+
+To verify Node.js is installed, open a terminal and run:
 ```bash
-# Install dependencies
-npm install
+node --version
+```
+You should see a version number like `v20.x.x`.
 
-# Run locally
-npm run dev
+### Running the App
 
-# Build for production
+1. **Download or clone this repository**
+   - Click the green "Code" button on GitHub, then "Download ZIP"
+   - Extract the ZIP to a folder on your computer
+   - OR if you have git: `git clone https://github.com/Positivitty/pokemmo-appraiser.git`
+
+2. **Open a terminal in the project folder**
+   - Windows: Open the folder, hold Shift + right-click, select "Open PowerShell window here"
+   - Mac: Open Terminal, type `cd ` then drag the folder into the terminal window
+
+3. **Install dependencies** (only needed once)
+   ```bash
+   npm install
+   ```
+
+4. **Start the app**
+   ```bash
+   npm run dev
+   ```
+
+5. **Open your browser** and go to: **http://localhost:5173**
+
+To stop the app, press `Ctrl + C` in the terminal.
+
+### Build for Production
+
+```bash
 npm run build
 ```
-
-Open `http://localhost:5173` in your browser.
 
 The app fetches all 649 Pokemon from PokeAPI on first load (takes ~30 seconds with a progress bar). After that it's cached in memory.
 
